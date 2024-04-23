@@ -4,6 +4,9 @@ title:  "TryHackMe Blue Write-up"
 date:   2024-04-23 +0800
 categories: write-up
 ---
+# Table of Contents
+
+
 This write-up will be walking through the [Blue](https://tryhackme.com/r/room/blue) machine on TryHackMe. This is an easy machine and TryHackMe says it should take around 30 minutes to complete. We also know that this is a Windows machine with some common misconfiguration issues that we may be able to leverage to gain access.
 
 **Question 1** - Scan the machine.
