@@ -2,7 +2,7 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+body { font: 400 16px/1.5 /**-apple-system, BlinkMacSystemFont**/ "Hack Nerd Font", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #B3BCDF; background-color: #11111B; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
@@ -27,18 +27,18 @@ li > ul, li > ol { margin-bottom: 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 /** Links */
-a { color: #2a7ae2; text-decoration: none; }
-a:visited { color: #1756a9; }
-a:hover { color: #111; text-decoration: underline; }
+a { color: #F5C2E7; text-decoration: none; }
+a:visited { color: #CBA6F7; }
+a:hover { color: #CBA6F7; text-decoration: underline; }
 .social-media-list a:hover { text-decoration: none; }
 .social-media-list a:hover .username { text-decoration: underline; }
 
 /** Blockquotes */
-blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
+blockquote { color: #313244; border-left: 4px solid #565970; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
-pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
+pre, code { font-size: 15px; border: 1px solid #565970; border-radius: 3px; background-color: #313244; }
 
 code { padding: 1px 5px; }
 
@@ -53,22 +53,22 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
 
 /** Icons */
-.svg-icon { width: 16px; height: 16px; display: inline-block; fill: #828282; padding-right: 5px; vertical-align: text-top; }
+.svg-icon { width: 16px; height: 16px; display: inline-block; fill: #B3BCDF; padding-right: 5px; vertical-align: text-top; }
 
 .social-media-list li + li { padding-top: 5px; }
 
 /** Tables */
-table { margin-bottom: 30px; width: 100%; text-align: left; color: #3f3f3f; border-collapse: collapse; border: 1px solid #e8e8e8; }
-table tr:nth-child(even) { background-color: #f7f7f7; }
+table { margin-bottom: 30px; width: 100%; text-align: left; color: #B3BCDF; border-collapse: collapse; border: 1px solid #e8e8e8; }
+/**table tr:nth-child(even) { background-color: #181825; } **/
 table th, table td { padding: 10px 15px; }
-table th { background-color: #f0f0f0; border: 1px solid #dedede; border-bottom-color: #c9c9c9; }
+table th { background-color: #181825; border: 1px solid #dedede; border-bottom-color: #c9c9c9; }
 table td { border: 1px solid #e8e8e8; }
 
 /** Site header */
-.site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 55.95px; position: relative; }
+.site-header { border-bottom: 1px solid #B3BCDF; min-height: 55.95px; position: relative; }
 
-.site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
-.site-title, .site-title:visited { color: #424242; }
+.site-title { font-size: 26px; font-weight: bolder; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
+.site-title, .site-title:visited { color: #F5C2E7; }
 
 .site-nav { float: right; line-height: 54px; }
 .site-nav .nav-trigger { display: none; }
@@ -85,13 +85,13 @@ table td { border: 1px solid #e8e8e8; }
   .site-nav .page-link:not(:last-child) { margin-right: 0; } }
 
 /** Site footer */
-.site-footer { border-top: 1px solid #e8e8e8; padding: 30px 0; }
+.site-footer { border-top: 1px solid #B3BCDF; padding: 30px 0; }
 
 .footer-heading { font-size: 18px; margin-bottom: 15px; }
 
 .contact-list, .social-media-list { list-style: none; margin-left: 0; }
 
-.footer-col-wrapper { font-size: 15px; color: #828282; margin-left: -15px; }
+.footer-col-wrapper { font-size: 15px; color: #B3BCDF; margin-left: -15px; }
 
 .footer-col { float: left; margin-bottom: 15px; padding-left: 15px; }
 
@@ -114,27 +114,27 @@ table td { border: 1px solid #e8e8e8; }
 .post-list { margin-left: 0; list-style: none; }
 .post-list > li { margin-bottom: 30px; }
 
-.post-meta { font-size: 14px; color: #828282; }
+.post-meta { font-size: 14px; color: #B3BCDF; }
 
-.post-link { display: block; font-size: 24px; }
+.post-link { display: block; font-size: 24px; font-weight: bold; }
 
 /** Posts */
 .post-header { margin-bottom: 30px; }
 
 .post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; }
-@media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
+@media screen and (max-width: 800px) { .post-title { font-size: 36px; font-weight: bold; } }
 
 .post-content { margin-bottom: 30px; }
-.post-content h2 { font-size: 32px; }
+.post-content h2 { font-size: 32px; font-weight: bold; }
 @media screen and (max-width: 800px) { .post-content h2 { font-size: 28px; } }
-.post-content h3 { font-size: 26px; }
+.post-content h3 { font-size: 26px; font-weight:600; }
 @media screen and (max-width: 800px) { .post-content h3 { font-size: 22px; } }
 .post-content h4 { font-size: 20px; }
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
-.highlighter-rouge .highlight { background: #eef; }
+.highlighter-rouge .highlight { background: #313244; }
 .highlight .c { color: #998; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }

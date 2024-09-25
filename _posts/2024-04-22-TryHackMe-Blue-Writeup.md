@@ -4,6 +4,9 @@ title:  "TryHackMe Blue Write-up"
 date:   2024-04-23 +0800
 categories: write-up
 ---
+
+<script src="/assets/js/oneko.js"></script>
+
 # Table of Contents
 1. [Introduction](#introduction)
 2. [Question 1](#question-1)

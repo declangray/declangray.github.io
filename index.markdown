@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+<script src="/assets/js/oneko.js"></script>

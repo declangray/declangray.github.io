@@ -9,3 +9,5 @@ Hi! My name is Declan Gray, I am a cybersecurity student from Australia. I start
 I am mainly active on TryHackMe, so most of my writeups will be for CTF challenge machines on the TryHackMe platform.
 
 <script src="https://tryhackme.com/badge/834861"></script>
+
+<script src="/assets/js/oneko.js"></script>
