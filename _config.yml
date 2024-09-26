@@ -30,6 +30,7 @@ linkedin_username: declan-gray-264bba286
 
 # Build settings
 theme: minima
+theme_mode: dark
 plugins:
   - jekyll-feed
 
