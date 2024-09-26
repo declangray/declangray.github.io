@@ -1,3 +1,32 @@
+/** Font **/
+/** Regular Hack Nerd Font **/
+@font-face {
+  font-family: "Hack Nerd Font";
+  src: url(/assets/font/HackNerdFont-Regular.ttf);
+}
+
+/** Bold Hack Nerd Font **/
+@font-face {
+  font-family: "Hack Nerd Font";
+  src: url(/assets/font/HackNerdFont-Bold.ttf);
+  font-weight: bold;
+}
+
+/** Italic Hack Nerd Font **/
+@font-face {
+  font-family: "Hack Nerd Font";
+  src: url(/assets/font/HackNerdFont-Italic.ttf);
+  font-style: italic;
+}
+
+/** Bold Italic Hack Nerd Font **/
+@font-face {
+  font-family: "Hack Nerd Font";
+  src: url(/assets/font/HackNerdFont-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: bold;
+}
+
 /** Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
