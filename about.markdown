@@ -11,5 +11,4 @@ I am mainly active on TryHackMe, so most of my writeups will be for CTF challeng
 
 <script src="https://tryhackme.com/badge/834861"></script>
 
-<script src="/assets/js/oneko.js"></script>
 

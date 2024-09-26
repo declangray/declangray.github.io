@@ -5,4 +5,4 @@
 layout: home
 ---
 <link rel="stylesheet" href="/assets/main.css">
-<script src="/assets/js/oneko.js"></script>
+
