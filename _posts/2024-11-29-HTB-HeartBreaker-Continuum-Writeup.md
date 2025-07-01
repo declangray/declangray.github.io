@@ -27,7 +27,7 @@ This is a writeup for the "Heartbreaker-Continuum" Sherlock machine on HackTheBo
 
 This writeup will first encompass my in-depth analysis of the provided sample, then I will go through each of the Sherlock questions and walkthrough how I derrived the answers. I will be conducting my analysis within [Remnux](https://remnux.org/), a Ubuntu-based Linux distro designed for malware analysis. **Always conduct malware analysis within a virtual machine/sandboxed environment.** Additionally, when analysing Windows-based malware it is much safer to do so within a non-Windows environment (unless you are conducting dynamic analysis).
 
-To begin, download the password-protected zip file `heartbreaker-continuum.zip` into your analysis environment. To unzip it, we can use 7zip `7z x heartbreaker_continuum.zip -p<password>`. This will extract the contents to the current directory. We cab now begin analysis.
+To begin, download the password-protected zip file `heartbreaker-continuum.zip` into your analysis environment. To unzip it, we can use 7zip `7z x heartbreaker_continuum.zip -p<password>`. This will extract the contents to the current directory. We can now begin analysis.
 
 # Analysis
 ## File Info
