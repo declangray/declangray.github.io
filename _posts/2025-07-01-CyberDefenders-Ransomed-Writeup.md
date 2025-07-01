@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "HackTheBox Heartbreaker-Continuum Malware Analysis Writeup"
-date:   2024-11-29 +0800
+title:  "CyberDefenders Ransomed Malware Analysis Writeup"
+date:   2025-07-01 +0800
 categories: write-up
 ---
 <link rel="stylesheet" href="/assets/main.css">
