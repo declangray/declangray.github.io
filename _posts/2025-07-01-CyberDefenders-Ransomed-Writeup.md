@@ -201,7 +201,7 @@ Reading further into the `CreateProcessA` documentation, we can determine what t
 
 The Microsoft documentation for [process creation flags](https://learn.microsoft.com/en-us/windows/win32/procthread/process-creation-flags) is useful here. The value `0x08000000` is associated with the flag `CREATE_NO_WINDOW` which just simply creates a process without a GUI window, not much use for figuring out the injection technique. However, the `0x00000004` value is associated with the flag `CREATE_SUSPENDED` which is interesting.
 
-Our analysis has so far shown that the malware spawns a new process *in a suspended state*, allocates memory inside of it and then injects shellcode into the allocated space. These are the hallmarks of *process hollowing* where memory is hollowed out in a suspended process for injection.
+So now we know that the malware spawns a new process *in a suspended state*, allocates memory inside of it, and then injects shellcode into the allocated space. These are the hallmarks of *process hollowing* where memory is hollowed out in a suspended process for injection. This process is described in the MITRE ATT&CK framework as [T1055.012](https://attack.mitre.org/techniques/T1055/012/).
 
 **Answer:** Process Hollowing
 
@@ -209,4 +209,13 @@ Our analysis has so far shown that the malware spawns a new process *in a suspen
 
 **Question:** What is the API used to write the payload into the target process?
 
-**Answer:**
+Referring back to the MITRE ATT&CK technique for process hollowing, it mentions the use of `ProcessWriteMemory` to write to the memory of the suspended process. We can set a breakpoint for any calls to `ProcessWriteMemory` in x32dbg to check if this is used in our sample.
+
+![The process hits the breakpoint on ProcessWriteMemory](/assets/images/Ransomed/writeprocessmemory.png)
+
+Ta-da! The sample hit our breakpoint, so it would appear this is the API being used to write the shellcode to the suspended process.
+
+**Answer:** ProcessWriteMemory
+
+# Conclusion
+CyberDefenders was recommended to me quite recently and so far I've really been enjoying their malware analysis labs. This lab was a really great experience and I learned quite a lot about debugging. I hope to do some more write-ups for these CyberDefenders labs in the future.
